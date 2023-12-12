@@ -21,13 +21,13 @@ class MyApp extends StatelessWidget {
           TodoBloc()
         ,
       child: MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Todo List',
         theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
         home: Scaffold(
           appBar: AppBar(
-            title: const Text("Bloc Todo List"),
+            title: const Text("Todo List"),
           ),
           body: const MyTodoListPage(
             title: "My Todo List",
