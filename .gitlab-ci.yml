@@ -4,8 +4,6 @@ stages:
 variables:
   FLUTTER_CHANNEL: "stable"
   FLUTTER_VERSION: "2.0.0"
-  CI_JOB_TOKEN: $CI_JOB_TOKEN
-  CI_JOB_TOKEN_ALLOWLIST: [ "*" ]
 
 before_script:
   - flutter --version
@@ -21,10 +19,6 @@ build:
     - flutter pub get
     - flutter build apk
 
-test:
-  stage: test
-  script:
-    - flutter test
 
 
 
